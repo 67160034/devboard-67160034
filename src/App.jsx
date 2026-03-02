@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar";
-import PostList from "./components/PostList";
-import UserCard from "./components/UserCard";
+import Navbar from "./components/Navbar.jsx";
+import PostList from "./components/PostList.jsx";
+import UserCard from "./components/UserCard.jsx";
 
 const POSTS = [
   {
