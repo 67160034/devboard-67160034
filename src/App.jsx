@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar.jsx";
-import PostList from "./components/PostList.jsx";
-import UserCard from "./components/UserCard.jsx";
+import Navbar from "./components/Navbar";
+import PostList from "./components/PostList";
+import UserCard from "./components/UserCard";
 
 const POSTS = [
   {
@@ -35,7 +35,6 @@ function App() {
   return (
     <div>
       <Navbar />
-
       <div
         style={{
           maxWidth: "900px",
@@ -46,12 +45,12 @@ function App() {
           gap: "2rem",
         }}
       >
-        {/* ซ้าย */}
+        {/* คอลัมน์ซ้าย: โพสต์ */}
         <div>
           <PostList posts={POSTS} />
         </div>
 
-        {/* ขวา */}
+        {/* คอลัมน์ขวา: สมาชิก */}
         <div>
           <h2
             style={{
@@ -62,13 +61,8 @@ function App() {
           >
             สมาชิก
           </h2>
-
           {USERS.map((user) => (
-            <UserCard
-              key={user.id}
-              name={user.name}
-              email={user.email}
-            />
+            <UserCard key={user.id} name={user.name} email={user.email} />
           ))}
         </div>
       </div>
