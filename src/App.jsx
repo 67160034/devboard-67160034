@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "./components/Navbar";
 import PostList from "./components/PostList";
-import UserCard from "./components/UserCard.jsx";
+import UserCard from "./components/Usercard.jsx";
 import AddPostForm from "./components/AddPostForm.jsx";
 
 const INITIAL_POSTS = [
