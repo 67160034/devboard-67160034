@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import PostCard from "./PostCard";
 import LoadingSpinner from "./LoadingSpinner";
 
-function PostList({ favorites, onToggleFavorite }) {
+function PostList({ favorites = [], onToggleFavorite = () => {} }) {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
